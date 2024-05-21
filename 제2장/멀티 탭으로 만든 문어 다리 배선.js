@@ -1,8 +1,8 @@
 // n = 20일 때 몇 가지의 멀티 탭 배치를 생각할 수 있는지 구해보세요(단, 전원 용량은 생각하지 않기로 합니다).
 
 const N = 20
-let memo = [];
-memo[1] = 1;
+let memo = []
+memo[1] = 1
 
 function set_tap(remain) {
   if (memo[remain]) {
