@@ -11,7 +11,7 @@ for i in range(0, N):
 goal2 = mask - goal1
 
 # 교환 횟수
-count = N * 2
+count = N*2
 for i in range(0, 1 << N*2): # 교환하는 시작 위치의 비트열
     turn  = i ^ (i << 1) ^ (i << 2)
     turn = (turn ^ (turn >> (N*2))) & mask
