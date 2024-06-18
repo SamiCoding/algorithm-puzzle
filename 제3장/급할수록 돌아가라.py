@@ -24,7 +24,7 @@ def search(x, y):
             v[x] += 1
             search(x, y-1)
             v[x] -= 1
-        if y < H:
+        if y < H: # 아래로 이동
             v[x] += 1
             search(x, y+1)
             v[x] -= 1
